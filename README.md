@@ -1,7 +1,7 @@
 # SQL-portfolio
 Portfólio de estudos em SQL com consultas, modelagem de dados e mini-projetos acadêmicos.
 
-
+```
 sql-portfolio/
 │
 ├── 01-consultas-basicas/
@@ -24,6 +24,7 @@ sql-portfolio/
 │   └── README.md
 │
 └── README.md
+```
 
 # SQL Portfolio
 
