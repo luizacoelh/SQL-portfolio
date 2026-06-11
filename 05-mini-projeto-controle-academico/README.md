@@ -1,7 +1,8 @@
+```
 curso → aluno → matrícula → disciplina
                     ↓
                   notas
-
+````
 # Sistema de Controle Acadêmico Simples
 
 Este mini-projeto foi desenvolvido como parte do meu portfólio de estudos em SQL.
