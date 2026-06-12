@@ -1,13 +1,13 @@
 -- Sistema de Controle Acadêmico Simples
--- Criação das tabelas principais
+-- Criação das tabelas principais com proteção contra duplicidade
 
-CREATE TABLE cursos (
+CREATE TABLE IF NOT EXISTS cursos (
     id_curso INTEGER PRIMARY KEY,
     nome_curso TEXT NOT NULL,
     modalidade TEXT NOT NULL
 );
 
-CREATE TABLE alunos (
+CREATE TABLE IF NOT EXISTS alunos (
     id_aluno INTEGER PRIMARY KEY,
     nome_aluno TEXT NOT NULL,
     email TEXT NOT NULL,
@@ -15,13 +15,13 @@ CREATE TABLE alunos (
     FOREIGN KEY (id_curso) REFERENCES cursos(id_curso)
 );
 
-CREATE TABLE disciplinas (
+CREATE TABLE IF NOT EXISTS disciplinas (
     id_disciplina INTEGER PRIMARY KEY,
     nome_disciplina TEXT NOT NULL,
     carga_horaria INTEGER NOT NULL
 );
 
-CREATE TABLE matriculas (
+CREATE TABLE IF NOT EXISTS matriculas (
     id_matricula INTEGER PRIMARY KEY,
     id_aluno INTEGER NOT NULL,
     id_disciplina INTEGER NOT NULL,
@@ -30,7 +30,7 @@ CREATE TABLE matriculas (
     FOREIGN KEY (id_disciplina) REFERENCES disciplinas(id_disciplina)
 );
 
-CREATE TABLE notas (
+CREATE TABLE IF NOT EXISTS notas (
     id_nota INTEGER PRIMARY KEY,
     id_matricula INTEGER NOT NULL,
     nota_1 REAL NOT NULL,

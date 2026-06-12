@@ -1,11 +1,11 @@
--- Inserção de dados fictícios para testes
+-- Inserção de dados fictícios para testes (com proteção contra IDs duplicados)
 
-INSERT INTO cursos (id_curso, nome_curso, modalidade) VALUES
+INSERT OR IGNORE INTO cursos (id_curso, nome_curso, modalidade) VALUES
 (1, 'Engenharia de Software', 'Presencial'),
 (2, 'Análise e Desenvolvimento de Sistemas', 'EAD'),
 (3, 'Ciência da Computação', 'Presencial');
 
-INSERT INTO alunos (id_aluno, nome_aluno, email, id_curso) VALUES
+INSERT OR IGNORE INTO alunos (id_aluno, nome_aluno, email, id_curso) VALUES
 (1, 'Ana Souza', 'ana.souza@email.com', 1),
 (2, 'Bruno Lima', 'bruno.lima@email.com', 1),
 (3, 'Carla Mendes', 'carla.mendes@email.com', 2),
@@ -13,14 +13,14 @@ INSERT INTO alunos (id_aluno, nome_aluno, email, id_curso) VALUES
 (5, 'Eduarda Alves', 'eduarda.alves@email.com', 3),
 (6, 'Felipe Gomes', 'felipe.gomes@email.com', 3);
 
-INSERT INTO disciplinas (id_disciplina, nome_disciplina, carga_horaria) VALUES
+INSERT OR IGNORE INTO disciplinas (id_disciplina, nome_disciplina, carga_horaria) VALUES
 (1, 'Banco de Dados', 80),
 (2, 'Programação I', 80),
 (3, 'Engenharia de Software', 60),
 (4, 'Redes de Computadores', 60),
 (5, 'Estruturas de Dados', 80);
 
-INSERT INTO matriculas (id_matricula, id_aluno, id_disciplina, semestre) VALUES
+INSERT OR IGNORE INTO matriculas (id_matricula, id_aluno, id_disciplina, semestre) VALUES
 (1, 1, 1, '2026.1'),
 (2, 1, 2, '2026.1'),
 (3, 2, 1, '2026.1'),
@@ -34,7 +34,7 @@ INSERT INTO matriculas (id_matricula, id_aluno, id_disciplina, semestre) VALUES
 (11, 6, 4, '2026.1'),
 (12, 6, 5, '2026.1');
 
-INSERT INTO notas (id_nota, id_matricula, nota_1, nota_2, nota_final) VALUES
+INSERT OR IGNORE INTO notas (id_nota, id_matricula, nota_1, nota_2, nota_final) VALUES
 (1, 1, 8.0, 7.5, 7.75),
 (2, 2, 9.0, 8.5, 8.75),
 (3, 3, 6.0, 5.5, 5.75),
