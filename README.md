@@ -1,6 +1,9 @@
 # SQL-portfolio
-Portfólio de estudos em SQL com consultas, modelagem de dados e mini-projetos acadêmicos.
+Portfólio de estudos e práticas em SQL com consultas, modelagem de dados e mini-projetos.
 
+![SQL](https://img.shields.io/badge/SQL-SQLite-blue?style=flat&logo=sqlite)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![GitHub](https://img.shields.io/badge/portfólio-GitHub-black?logo=github)
 ```
 sql-portfolio/
 │
@@ -26,9 +29,6 @@ sql-portfolio/
 └── README.md
 ```
 
-# SQL Portfolio
-
-Este repositório reúne meus estudos e práticas em SQL, com foco em consultas, modelagem de dados e mini-projetos.
 
 ## Objetivo
 
