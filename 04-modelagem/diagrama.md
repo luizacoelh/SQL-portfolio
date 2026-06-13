@@ -1,5 +1,5 @@
 # Diagrama textual do banco
-
+![Diagrama do banco](diagrama.png)
 cursos
 - id_curso PK
 - nome_curso

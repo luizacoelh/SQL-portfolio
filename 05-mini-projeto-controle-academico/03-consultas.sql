@@ -61,17 +61,17 @@ ORDER BY media_geral DESC;
 --Consulta 6 — Situação de aprovação por disciplina(CASE)
 SELECT 
     alunos.nome_aluno,
-    cursos.nome_curso,
-    ROUND(AVG(notas.nota_final), 2) AS media_geral
-FROM alunos
-INNER JOIN cursos 
-    ON alunos.id_curso = cursos.id_curso
-INNER JOIN matriculas 
-    ON alunos.id_aluno = matriculas.id_aluno
-INNER JOIN notas 
-    ON matriculas.id_matricula = notas.id_matricula
-GROUP BY alunos.nome_aluno, cursos.nome_curso
-ORDER BY media_geral DESC;
+    disciplinas.nome_disciplina,
+    notas.nota_final,
+    CASE 
+        WHEN notas.nota_final >= 7 THEN 'Aprovado'
+        ELSE 'Reprovado'
+    END AS situacao
+FROM notas
+INNER JOIN matriculas ON notas.id_matricula = matriculas.id_matricula
+INNER JOIN alunos ON matriculas.id_aluno = alunos.id_aluno
+INNER JOIN disciplinas ON matriculas.id_disciplina = disciplinas.id_disciplina
+ORDER BY alunos.nome_aluno;
 
 
 -- Consulta 7 — Ranking dos alunos por média geral

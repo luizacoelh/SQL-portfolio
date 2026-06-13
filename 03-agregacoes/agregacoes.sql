@@ -2,7 +2,7 @@
 SELECT COUNT(*) AS total_alunos
 FROM alunos;
 
---SELECT AVG(nota_final)
+SELECT AVG(nota_final) AS media_notas
 FROM notas;
 
 --GROUP BY 
