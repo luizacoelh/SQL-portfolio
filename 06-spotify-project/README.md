@@ -1,6 +1,6 @@
 # 🎵 Spotify Insights — SQL Analytics
 
-> 🚀 **Dica para Avaliadores/Recrutadores:** Para que você não precise baixar o arquivo CSV de 114k linhas e rodar o script de importação Python, eu já deixei o banco de dados SQLite pronto para uso. Você pode baixá-lo diretamente aqui: [Baixar spotify_insights.db (21MB)](https://github.com/luizacoelh/SQL-portfolio/releases/download/v1.0.0/spotify_insights.db)
+>  **Dica para Avaliadores/Recrutadores:** Para que você não precise baixar o arquivo CSV de 114k linhas e rodar o script de importação Python, eu já deixei o banco de dados SQLite pronto para uso. Você pode baixá-lo diretamente aqui: [Baixar spotify_insights.db (21MB)](https://github.com/luizacoelh/SQL-portfolio/releases/download/v1.0.0/spotify_insights.db)
 Análise de **113.999 faixas** do Spotify com SQL puro, utilizando dados reais do Kaggle.
 
 O projeto demonstra modelagem de banco de dados relacional, normalização em múltiplas tabelas e consultas analíticas avançadas sobre um dataset real de larga escala.
