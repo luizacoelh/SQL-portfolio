@@ -70,7 +70,7 @@ genres ──── tracks ──── artists
 
 [Spotify Tracks Dataset — Kaggle](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset)
 
-Salve o arquivo como `dataset.csv` na pasta `06-spotify-insights/`.
+Salve o arquivo como `dataset.csv` na pasta `06-spotify-project/`.
 
 **2. Importe os dados**
 
