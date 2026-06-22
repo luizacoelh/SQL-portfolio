@@ -4,7 +4,7 @@ Portfólio de estudos e práticas em SQL com consultas, modelagem de dados e min
 
 ![SQL](https://img.shields.io/badge/SQL-SQLite-blue?style=flat&logo=sqlite)
 ![Python](https://img.shields.io/badge/Python-3.x-yellow?style=flat&logo=python)
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-green)
 ![GitHub](https://img.shields.io/badge/portfólio-GitHub-black?logo=github)
 
 ## Objetivo
@@ -43,4 +43,5 @@ Consultas avançadas com HAVING, SUBQUERY correlacionada e WITH (CTE).
 
 ## Status
 
-Em desenvolvimento.
+✅ Projetos atuais concluídos e documentados.
+Novos mini-projetos podem ser adicionados conforme a evolução dos estudos.
