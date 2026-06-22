@@ -1,69 +1,45 @@
-# SQL-portfolio
+# SQL Portfolio
+
 Portfólio de estudos e práticas em SQL com consultas, modelagem de dados e mini-projetos.
 
 ![SQL](https://img.shields.io/badge/SQL-SQLite-blue?style=flat&logo=sqlite)
+![Python](https://img.shields.io/badge/Python-3.x-yellow?style=flat&logo=python)
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 ![GitHub](https://img.shields.io/badge/portfólio-GitHub-black?logo=github)
-```
-sql-portfolio/
-│
-├── 01-consultas-basicas/
-│   └── consultas_basicas.sql
-│
-├── 02-joins/
-│   └── joins.sql
-│
-├── 03-agregacoes/
-│   └── agregacoes.sql
-│
-├── 04-modelagem/
-│   ├── modelo_logico.md
-│   └── diagrama.md
-│
-├── 05-mini-projeto-controle-academico/
-│   ├── 01-criacao-tabelas.sql
-│   ├── 02-insercao-dados.sql
-│   ├── 03-consultas.sql
-│   └── README.md
-│
-└── README.md
-```
-
 
 ## Objetivo
 
-O objetivo deste portfólio é documentar minha evolução em banco de dados e demonstrar conhecimentos práticos em SQL.
+Documentar minha evolução em banco de dados e demonstrar conhecimentos práticos em SQL,
+desde consultas básicas até análises com dados reais de larga escala.
 
-## Conteúdos
+## Estrutura
 
-- Consultas básicas
-- JOINs
-- Funções de agregação
-- Modelagem de dados
-- Mini-projetos práticos
+| Pasta | Conteúdo |
+|---|---|
+| `01-consultas-basicas/` | SELECT, WHERE, ORDER BY, LIMIT, DISTINCT |
+| `02-joins/` | INNER JOIN, LEFT JOIN, JOIN com 3 tabelas |
+| `03-agregacoes/` | COUNT, AVG, GROUP BY, HAVING |
+| `04-modelagem/` | Diagrama e modelo lógico relacional |
+| `05-mini-projeto-controle-academico/` | Sistema acadêmico com dados fictícios |
+| `06-spotify-project/` | Análise de 113.999 faixas do Spotify com dados reais |
 
 ## Mini-projetos
 
-### Sistema de Controle Acadêmico Simples
+### 🎓 Sistema de Controle Acadêmico
+Banco relacional com cursos, alunos, disciplinas, matrículas e notas.
+Consultas com JOIN, GROUP BY, AVG, CASE e ranking de alunos por média.
+→ [ver projeto](./05-mini-projeto-controle-academico/)
 
-Projeto com tabelas de cursos, alunos, disciplinas, matrículas e notas.
-
-Consultas desenvolvidas:
-
-- Alunos por curso
-- Quantidade de alunos por curso
-- Alunos matriculados por disciplina
-- Disciplinas com mais matrículas
-- Média final dos alunos
-- Situação de aprovação/reprovação
-- Ranking de alunos por média
+### 🎵 Spotify Insights — SQL Analytics
+Análise de **113.999 faixas reais** do Spotify normalizadas em 3 tabelas.
+Consultas avançadas com HAVING, SUBQUERY correlacionada e WITH (CTE).
+→ [ver projeto](./06-spotify-project/)
 
 ## Tecnologias
 
-- SQL
-- SQLite
-- Git
-- GitHub
+- SQL / SQLite
+- Python (importação de dados)
+- Git e GitHub
 
 ## Status
 
