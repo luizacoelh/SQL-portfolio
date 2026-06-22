@@ -21,7 +21,7 @@ O dataset original foi normalizado em 3 tabelas relacionadas:
 genres ──── tracks ──── artists
   1:N          N:1
 ```
-
+![Diagrama do banco Spotify Insights](diagrama.png)
 ---
 
 ## Arquivos
